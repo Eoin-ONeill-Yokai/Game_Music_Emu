@@ -46,6 +46,11 @@ void gme_delete( gme_t* );
 Fade time can be changed while track is playing. */
 void gme_set_fade( gme_t*, int start_msec, int length_msec );
 
+/* LIBGST Compatibility Method
+ * Temporarily use this override as option
+ * for compatibility with older GME versions... */
+void gme_set_fade( gme_t*, int start_msec);
+
 /* True if a track has reached its end */
 gme_bool gme_track_ended( const gme_t* );
 
