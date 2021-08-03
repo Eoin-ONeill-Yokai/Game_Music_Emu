@@ -44,7 +44,7 @@ void gme_delete( gme_t* );
 
 /* Sets time to start fading track out. Once fade ends track_ended() returns true.
 Fade time can be changed while track is playing. */
-void gme_set_fade( gme_t*, int start_msec, int length_msec );
+void gme_set_fade_new( gme_t*, int start_msec, int length_msec );
 
 /* LIBGST Compatibility Method
  * Temporarily use this override as option

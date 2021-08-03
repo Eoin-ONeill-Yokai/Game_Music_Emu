@@ -346,7 +346,7 @@ BLARGG_EXPORT void      gme_set_user_cleanup(Music_Emu* gme, gme_user_cleanup_t 
 
 BLARGG_EXPORT gme_err_t gme_start_track    ( Music_Emu* gme, int index )              { return gme->start_track( index ); }
 BLARGG_EXPORT gme_err_t gme_play           ( Music_Emu* gme, int n, short p [] )      { return gme->play( n, p ); }
-BLARGG_EXPORT void      gme_set_fade       ( Music_Emu* gme, int start_msec, int length_msec ) { gme->set_fade( start_msec, length_msec ); }
+BLARGG_EXPORT void      gme_set_fade_new       ( Music_Emu* gme, int start_msec, int length_msec ) { gme->set_fade( start_msec, length_msec ); }
 BLARGG_EXPORT void      gme_set_fade       ( Music_Emu* gme, int fade_time ) { gme->set_fade(fade_time, 100); }
 BLARGG_EXPORT gme_bool  gme_track_ended    ( Music_Emu const* gme )                   { return gme->track_ended(); }
 BLARGG_EXPORT int       gme_tell           ( Music_Emu const* gme )                   { return gme->tell(); }
